@@ -218,16 +218,6 @@ cd task1_log_parsing
 
 Create `log_analysis.py` using any editor:
 
-```bash
-# Windows
-notepad log_analysis.py
-
-# Mac / Linux
-nano log_analysis.py
-
-# Or with VS Code
-code log_analysis.py
-```
 
 ### 4. Run and Verify the Script
 Make sure the script runs and produces output without errors:
