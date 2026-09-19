@@ -203,6 +203,10 @@ Copy your forked repo's URL, then clone it and move into the project folder:
 git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
 cd <REPO_NAME>
 code .
+
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 ```
 
 ### 3. Navigate and Create the Solution File
@@ -237,7 +241,7 @@ Stage the file, commit with the required message, and push to your remote repo:
 
 ```bash
 git status
-git add log_analysis.py
+git add task1_log_parsing/log_analysis.py
 git commit -m "feat: task 1 completed log parsing and error counter"
 git push origin main
 ```
