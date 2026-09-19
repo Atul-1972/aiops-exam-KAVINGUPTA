@@ -184,3 +184,17 @@ Implement real-time metric streaming and threshold monitoring using Kafka:
 - [ ] Task 4 implemented, executed, and committed
 - [ ] One atomic commit per task, using the exact commit messages above
 - [ ] All commits pushed to the `main` branch before the deadline
+
+
+
+
+
+##1.Fork the Repository:Browser mein assignment repo open karein aur top-right corner par Fork button click karein.2.Clone to Local Machine:Apne forked repo ka URL copy karein aur local terminal mein clone karke folder ke andar enter karein:Bashgit clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
+cd <REPO_NAME>
+3.Navigate and Create Solution File:Specific task folder mein navigate karein aur solution file generate karein:Bashcd task1_log_parsing
+notepad log_analysis.py
+(Mac/Linux users nano log_analysis.py ya code log_analysis.py use kar sakte hain).4.Execute and Verify Script:Script run karke verify karein ki output bina kisi error ke generate ho raha hai:Bashpython log_analysis.py
+5.Track, Commit, and Push Changes:File ko stage karein, required commit message ke saath commit karein aur remote repo par push karein:Bashgit status
+git add log_analysis.py
+git commit -m "feat: task 1 completed log parsing and error counter"
+git push origin main
