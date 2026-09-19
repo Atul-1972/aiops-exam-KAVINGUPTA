@@ -267,3 +267,84 @@ pip install numpy pandas matplotlib seaborn scikit-learn scipy psutil regex requ
 
 git pull origin main --rebase
 git push origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#more github commands
+
+# AIOps Lab Exam Project
+
+This repository contains the complete implementation of AIOps practical exam tasks.
+
+---
+
+## Environment Setup & Commands
+
+Run these commands in your VS Code PowerShell terminal:
+
+### 1. Clone & Enter Folder
+git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
+cd <REPO_NAME>
+git pull origin main
+
+### 2. Virtual Environment Setup & Activation
+python -m venv venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
+
+### 3. Install All Packages
+pip install numpy pandas matplotlib scikit-learn apache-airflow kafka-python
+
+---
+
+## Tasks Execution
+
+### Task 1: Log Parsing
+python task1_log_parsing/log_analysis.py
+
+### Task 2: Anomaly Detection
+python task2_anomaly_detection/anomaly_detection.py
+
+### Task 3: Airflow DAG Setup
+python dags/task3_dag.py
+
+---
+
+## GitHub Submission Workflow (Using Exact File Paths)
+
+### Submit Task 1:
+git add task1_log_parsing/log_analysis.py app.log
+git commit -m "feat: task 1 completed log parsing and error counter"
+git push origin main
+
+### Submit Task 2:
+git add task2_anomaly_detection/anomaly_detection.py
+git commit -m "feat: task 2 completed isolation forest anomaly detection"
+git push origin main
+
+### Submit Task 3:
+git add dags/task3_dag.py
+git commit -m "feat: task 3 completed apache airflow dag pipeline"
+git push origin main
+
+---
+
+## If Push Rejected (Fix):
+git pull origin main --rebase
+git push origin main
