@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.ensemble import IsolationForest
 
 response_time=[120, 125, 118, 130, 122,
@@ -21,3 +22,9 @@ for val,p in zip(response_time,predictions):
 
 
 #-----------matplotlib-----------------
+plt.plot(response_time,label="response_time")
+plt.title("Response Time Anomaly Detection")
+plt.xlabel("index")
+plt.ylabel("response_time")
+plt.legend()
+plt.show()
