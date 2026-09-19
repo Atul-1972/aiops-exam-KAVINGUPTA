@@ -50,4 +50,8 @@ with DAG(
     collect_data_task >> process_data_task >> detect_anomalies_task >> saving_results_task
 
 
-
+print("--- TESTING PIPELINE EXECUTION ---")
+collect_data()
+process_data()
+detect_anomalies()
+saving_results()
