@@ -239,3 +239,27 @@ git push origin main
 ---
 
 ✅ **Done!** Your solution is now live on your forked repository.
+
+# 1. Cloned repo ke folder mein jao
+cd <REPO_NAME>
+
+# 2. Virtual environment banao
+python -m venv venv
+
+# 3. Execution policy bypass karo (agar script error aaye)
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# 4. Environment activate karo
+.\venv\Scripts\Activate.ps1
+
+# 5. Pip upgrade karo
+python -m pip install --upgrade pip
+
+# 6. Agar requirements.txt file repo mein hai:
+pip install -r requirements.txt
+
+# (OR) Agar requirements.txt file nahi hai, toh direct packages daalo:
+pip install numpy matplotlib scikit-learn
+
+#all files
+pip install numpy pandas matplotlib seaborn scikit-learn scipy psutil regex requests python-dotenv apache-airflow kafka-python pydantic
