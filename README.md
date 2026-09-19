@@ -263,3 +263,7 @@ pip install numpy matplotlib scikit-learn
 
 #all files
 pip install numpy pandas matplotlib seaborn scikit-learn scipy psutil regex requests python-dotenv apache-airflow kafka-python pydantic
+
+
+git pull origin main --rebase
+git push origin main
