@@ -189,12 +189,59 @@ Implement real-time metric streaming and threshold monitoring using Kafka:
 
 
 
-##1.Fork the Repository:Browser mein assignment repo open karein aur top-right corner par Fork button click karein.2.Clone to Local Machine:Apne forked repo ka URL copy karein aur local terminal mein clone karke folder ke andar enter karein:Bashgit clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
+## 🚀 Setup & Submission Guide
+
+Follow these steps to complete and submit the assignment.
+
+### 1. Fork the Repository
+Open the assignment repository in your browser and click the **Fork** button at the top-right corner.
+
+### 2. Clone to Your Local Machine
+Copy your forked repo's URL, then clone it and move into the project folder:
+
+```bash
+git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
 cd <REPO_NAME>
-3.Navigate and Create Solution File:Specific task folder mein navigate karein aur solution file generate karein:Bashcd task1_log_parsing
+code .
+```
+
+### 3. Navigate and Create the Solution File
+Go to the task folder and create your solution file:
+
+```bash
+cd task1_log_parsing
+```
+
+Create `log_analysis.py` using any editor:
+
+```bash
+# Windows
 notepad log_analysis.py
-(Mac/Linux users nano log_analysis.py ya code log_analysis.py use kar sakte hain).4.Execute and Verify Script:Script run karke verify karein ki output bina kisi error ke generate ho raha hai:Bashpython log_analysis.py
-5.Track, Commit, and Push Changes:File ko stage karein, required commit message ke saath commit karein aur remote repo par push karein:Bashgit status
+
+# Mac / Linux
+nano log_analysis.py
+
+# Or with VS Code
+code log_analysis.py
+```
+
+### 4. Run and Verify the Script
+Make sure the script runs and produces output without errors:
+
+```bash
+python log_analysis.py
+```
+
+### 5. Commit and Push Your Changes
+Stage the file, commit with the required message, and push to your remote repo:
+
+```bash
+git status
 git add log_analysis.py
 git commit -m "feat: task 1 completed log parsing and error counter"
 git push origin main
+```
+
+---
+
+✅ **Done!** Your solution is now live on your forked repository.
