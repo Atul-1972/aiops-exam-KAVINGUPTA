@@ -1,0 +1,46 @@
+===================================================================
+AIOPS LAB EXAM — ONLY COMMANDS CHEATSHEET (WINDOWS CMD / VS CODE)
+===================================================================
+
+[MAIN COMMANDS — YEH CHALANE HI CHALANE HAIN]
+
+1. Install Dependency (Ek baar chalayein):
+   pip install kafka-python
+
+2. Start Kafka Server (Terminal 1 mein run karein aur open chhod dein):
+   .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3. Create Topic (Terminal 2 mein chalayein):
+   .\bin\windows\kafka-topics.bat --create --topic server_metrics --bootstrap-server localhost:9092
+
+4. Run Q3 (Terminal 3 mein pehle Consumer chalayein):
+   python consumer_q3.py
+
+5. Run Q2 (Terminal 4 mein Producer chalayein):
+   python producer.py
+
+6. Run Q5 (Terminal 3 mein Q3 ko Ctrl+C karein aur chalayein):
+   python consumer_q5.py
+   (Terminal 4 mein dubara run karein: python producer.py)
+
+
+-------------------------------------------------------------------
+[SAFETY COMMANDS — AGAR KOI ERROR / PROBLEM AAYE TABHI USE KAREIN]
+-------------------------------------------------------------------
+
+- Agar Kafka server crash ho aur Zookeeper missing ka error de:
+  .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+- Agar check karna ho ki topic theek se bana ya nahi:
+  .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+- Agar topic delete karke dobara fresh banana ho:
+  .\bin\windows\kafka-topics.bat --delete --topic server_metrics --bootstrap-server localhost:9092
+
+- Agar bina python ke direct terminal pe data stream check karna ho:
+  .\bin\windows\kafka-console-consumer.bat --topic server_metrics --from-beginning --bootstrap-server localhost:9092
+
+- Agar Git push reject ho jaye:
+  git pull origin main --rebase
+  git push origin main
+===================================================================
