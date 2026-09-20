@@ -122,6 +122,7 @@ Define an automated monitoring DAG in Apache Airflow named **`practical2_aiops_d
 
 | Parameter | Value |
 |-----------|-------|
+|dag id|
 | `start_date` | September 14, 2026 |
 | `schedule` | `None` |
 | `catchup` | `False` |
@@ -200,8 +201,8 @@ Open the assignment repository in your browser and click the **Fork** button at 
 Copy your forked repo's URL, then clone it and move into the project folder:
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
-cd <REPO_NAME>
+git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+cd REPO_NAME
 code .
 
 
@@ -241,7 +242,7 @@ git push origin main
 ✅ **Done!** Your solution is now live on your forked repository.
 
 # 1. Cloned repo ke folder mein jao
-cd <REPO_NAME>
+cd REPO_NAME
 
 # 2. Virtual environment banao
 python -m venv venv
@@ -299,8 +300,8 @@ This repository contains the complete implementation of AIOps practical exam tas
 Run these commands in your VS Code PowerShell terminal:
 
 ### 1. Clone & Enter Folder
-git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
-cd <REPO_NAME>
+git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+cd REPO_NAME
 git pull origin main
 
 ### 2. Virtual Environment Setup & Activation
